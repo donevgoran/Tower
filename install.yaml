@@ -1,6 +1,8 @@
 ---
 - name: installing httpd
+  hosts: rocky
   tasks:
-  - dnf:
+  - name: install httpd
+    dnf:
       name: "{{ pkg }}"
       state: latest
