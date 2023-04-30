@@ -1,6 +1,5 @@
 ---
 - name: installing httpd
-  hosts: rocky
   tasks:
   - dnf:
       name: httpd
