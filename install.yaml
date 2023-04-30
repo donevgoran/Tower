@@ -2,5 +2,5 @@
 - name: installing httpd
   tasks:
   - dnf:
-      name: httpd
+      name: "{{ pkg }}"
       state: latest
