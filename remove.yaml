@@ -1,0 +1,7 @@
+---
+- name: remove httpd
+  hosts: rocky 
+  tasks:
+  - dnf:
+      name: httpd
+      state: absent
